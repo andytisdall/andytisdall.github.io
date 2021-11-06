@@ -1,6 +1,8 @@
 import './App.css';
 import Project from './Project';
 import Header from './Header';
+import Navbar from './Sidebar';
+
 import apprehenchmen_image from './images/apprehenchmen.png'
 import exploring_image from './images/exploring.png'
 import harpist_image from './images/harpist.png'
@@ -9,11 +11,8 @@ import fingersynth_image from './images/fingersynth.png'
 function App() {
   return (
     <div className="container">
+      <Navbar />
       <Header />
-      <div className="contact">
-        <div className="contact-item">andrew.tisdall@gmail.com</div>
-        <a href="#" className="contact-item">Linkedin</a>
-      </div>
       <div className="project-container">
       <Project 
           title="Exploring the Space"
