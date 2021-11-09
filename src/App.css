@@ -1,3 +1,7 @@
+.body-container {
+  min-width: fit-content;
+}
+
 .navbar {
   background-color: rgb(68, 67, 67);
   display: flex;
@@ -8,6 +12,13 @@
 
 .link {
   padding: 1rem;
+}
+
+@media (max-width: 550px) {
+  .link {
+    font-size: 50%;
+    padding: 0.5rem;
+  }
 }
 
 .container {
@@ -69,4 +80,101 @@ a:visited {
   max-width: 13rem;
   max-height: 13rem;
   margin: 1rem;
+}
+
+/* // RESUME // */
+
+.resume-background {
+  width: auto;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(66, 198, 238, 0.493),
+      rgba(0, 199, 116, 0.432)
+    ),
+    url(./images/hero.jpg);
+  background-size: cover;
+  padding: 2rem;
+}
+
+.resume {
+  max-width: 40rem;
+  min-height: 53rem;
+  background-color: white;
+  color: rgb(77, 77, 77);
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.resume a:link,
+.resume a:visited {
+  color: rgb(77, 77, 77);
+}
+
+.resume-bar {
+  width: 95%;
+  height: 0.6rem;
+  background-color: rgb(24, 165, 24);
+  margin: 0.5rem auto;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  line-height: 150%;
+}
+
+.resume-info-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.resume-section-header {
+  color: rgb(24, 165, 24);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.8rem 0;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  font-size: 0.8rem;
+  line-height: 150%;
+}
+
+.resume-project-title {
+  font-weight: 600;
+  font-size: 0.7rem;
+  margin: 0.5rem auto;
+}
+
+.resume-position {
+  font-style: italic;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.resume-date {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 400;
 }
