@@ -30,13 +30,10 @@ const Experience = () => {
             </div>
             <ul>
                 <li>
-                Supervised a team of servers and bartenders in a high volume setting.
+                Worked with a team to deliver consistent and excellent customer service.
                 </li>
                 <li>
-                Managed booking and execution of large private events.
-                </li>
-                <li>
-                Coordinated with back of house to maintain consistent service and quality.
+                Operated and monitored the projector and audio equipment to create a high quality theater experience.
                 </li>
             </ul>
         </section>

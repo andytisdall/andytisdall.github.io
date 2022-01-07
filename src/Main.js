@@ -14,13 +14,13 @@ const Main = props => {
             <div className="project-container">
             <Project 
                 title="Exploring the Space"
-                description="Online cataloging and playback of audio files.  Full-stack web application built with React, Redux, Express, & MongoDB"
+                description="Online cataloging and playback of audio files.  Full-stack web application built with React, Redux, Express, & MongoDB. Used by real bands to develop musical projects."
                 pic={exploring_image}
                 url="https://exploring-the-space.com"
                 />
                 <Project 
                 title="Apprehenchmen"
-                description="Website for my band. Full-stack site built with Django and Bootstrap."
+                description="Homepage for a working band. Full-stack site built with Django and Bootstrap."
                 pic={apprehenchmen_image}
                 url="https://apprehenchmen.com"
                 />

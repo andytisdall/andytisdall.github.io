@@ -5,7 +5,7 @@ const Navbar = props => {
     return (
         <div className='navbar'>
             
-            <a className="link" href="#">
+            <a className="link" href="/">
                 Andy Tisdall
             </a>
 
