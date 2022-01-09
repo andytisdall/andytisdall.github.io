@@ -14,25 +14,25 @@ const Main = props => {
             <div className="project-container">
             <Project 
                 title="Exploring the Space"
-                description="Online cataloging and playback of audio files.  Full-stack web application built with React, Redux, Express, & MongoDB. Used by real bands to develop musical projects."
+                description="Online cataloging and playback of audio files.  Full-stack web application built with React, Redux, Express, & MongoDB. Used by real bands to develop musical projects. Provides database for upload, organization and playback of audio files."
                 pic={exploring_image}
                 url="https://exploring-the-space.com"
                 />
                 <Project 
                 title="Apprehenchmen"
-                description="Homepage for a working band. Full-stack site built with Django and Bootstrap."
+                description="Homepage for a working band. Full-stack site built with Django and Bootstrap.  Provides a database for band resources such as photos, mailing list, events and lyrics."
                 pic={apprehenchmen_image}
                 url="https://apprehenchmen.com"
                 />
                 <Project 
                 title="Finger Synth"
-                description="Mobile synth with touch interaction. Built with React and using the ToneJS module."
+                description="Mobile synth with touch interaction. Built with React and using the ToneJS module.  Customizable Javascript-based instrument with modular effect processing, controlled by touch screen gestures."
                 pic={fingersynth_image}
                 url="https://andytisdall.github.io/finger-synth"
                 />
                 <Project 
                 title="Harpist"
-                description="Virtual harp built with vanilla Javascript and using the ToneJS module."
+                description="Customizable virtual harp instrument built with vanilla Javascript and using the ToneJS module."
                 pic={harpist_image}
                 url="https://apprehenchmen.com/harp"
                 />
