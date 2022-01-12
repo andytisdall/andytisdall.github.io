@@ -7,6 +7,22 @@ const Experience = () => {
                 Work Experience
             </div>
             <div className="resume-project-title">
+                Freelance - 
+                <span className="resume-position"> Web Developer -</span>
+                <span className="resume-date"> Aug 2019 - Current</span>
+            </div>
+            <ul>
+                <li>
+                Created full stack web applications with Django, React, Express, Node, MongoDB & Bootstrap.
+                </li>
+                <li>
+                Built web-based tools for music creation.  
+                </li>
+                <li>
+                Designed resources that working musicians use in development of projects.
+                </li>
+            </ul>
+            <div className="resume-project-title">
                 Luka's Taproom & Lounge - 
                 <span className="resume-position"> Front of House Manager -</span>
                 <span className="resume-date"> May 2013 - May 2021</span>

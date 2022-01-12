@@ -11,7 +11,7 @@ const Skills = () => {
                 Languages: Proficient in Javascript & Python
                 </li>
                 <li>
-                Technologies: Node, Express, React, Redux, Django, MongoDB, Redux, Docker, Kubernetes, CSS
+                Technologies: Node, Typescript, Express, React, Redux, Django, MongoDB, Redux, Docker, Kubernetes, CSS
                 </li>
             </ul>
         </section>
