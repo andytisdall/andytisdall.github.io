@@ -9,6 +9,7 @@ const Main = () => {
     return projectData.map((proj) => {
       return (
         <Project
+          key={proj.title}
           title={proj.title}
           description={proj.description}
           pic={proj.pic}
