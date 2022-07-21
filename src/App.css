@@ -39,31 +39,108 @@ a:visited {
   font-size: 4.5rem;
   font-weight: 600;
   text-align: center;
-  color: rgb(44, 44, 44);
+  color: rgb(255, 170, 0);
+  text-shadow: -5px 3px black;
+  animation-name: drop;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-10rem);
+  }
+
+  30% {
+    transform: translateY(-10rem);
+  }
+
+  70% {
+    transform: translateY(0);
+  }
+
+  85% {
+    transform: translateY(-.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .contact-item {
   margin: 0 2rem;
 }
 
-.project-container {
+.project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 25rem);
-  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 25rem);
+}
+
+.project-wrapper {
+  position: relative;
+  margin: 1.5rem;
+  height: 31rem;
+  transition: all .5s;
 }
 
 .project {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: center;
   padding: 1.5rem;
-  border: 1px solid black;
-  height: 28rem;
-  margin: 1.5rem;
+  height: 100%;
+  border: 3px solid black;
   box-sizing: border-box;
   background-color: rgb(60, 90, 104);
   box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.616);
+  animation-name: flip;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  backface-visibility: hidden;
+  transition: all .5s;
+}
+
+.project-wrapper:hover {
+  transform: scale(1.4);
+  z-index: 100;
+}
+
+.project-back {
+  position: absolute;
+  height: 31rem;
+  width: 22rem;
+  background-image: url('./images/card.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.616);
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  animation-name: flipback;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(180deg)
+  }
+
+  100% {
+    transform: rotateY(0);
+  }
+}
+
+@keyframes flipback {
+  0% {
+    transform: rotateY(0)
+  }
+
+  100% {
+    transform: rotateY(180deg);
+  }
 }
 
 .title {
@@ -94,9 +171,9 @@ a:visited {
   max-width: 40rem;
   min-height: 53rem;
   background-color: white;
-  color: rgb(77, 77, 77);
+  color: rgb(0, 0, 0);
   margin: auto;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   padding: 1rem 1.5rem;
   box-sizing: border-box;
 }
@@ -116,8 +193,9 @@ a:visited {
 h1 {
   font-weight: 600;
   font-size: 2rem;
-  padding: 0.5rem 0;
   margin: 0;
+  padding: 0;
+  padding-top: 3px;
 }
 
 .resume-header {
@@ -127,23 +205,30 @@ h1 {
 }
 
 .resume-info {
+  font-size: 0.9rem;
+  margin-right: 1rem;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-size: 0.8rem;
-  line-height: 150%;
+  flex-direction: column;
+  align-items: flex-end;
+  color: rgb(77, 77, 77);
 }
 
-.resume-info-item:not(:last-child) {
-  margin-right: 0.5rem;
+.resume-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.resume-portfolio a {
+  margin-top: 2px;
 }
 
 .resume-section-header {
   color: rgb(24, 165, 24);
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin: 0.8rem 0;
+  margin: 0.7rem .5rem 0.5rem 0;
 }
 
 ul {
@@ -151,24 +236,23 @@ ul {
 }
 
 li {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 150%;
 }
 
 .resume-project-title {
   font-weight: 600;
-  font-size: 0.7rem;
+  font-size: .9rem;
   margin: 0.5rem auto;
+  letter-spacing: .5px;
 }
 
 .resume-position {
-  font-style: italic;
-  font-size: 0.7rem;
-  font-weight: 600;
+  font-size: .9rem;
+  font-weight: 400;
 }
 
 .resume-date {
   text-transform: uppercase;
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 600;
 }
