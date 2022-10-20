@@ -3,6 +3,7 @@ import exploring_image from '../images/exploring.png';
 import harpist_image from '../images/harpist.png';
 import fingersynth_image from '../images/fingersynth.png';
 import coderunner_image from '../images/coderunner.png';
+import exploring_mobile_image from '../images/exploring-mobile.png';
 
 const data = [
   {
@@ -18,6 +19,13 @@ const data = [
       'Online cataloging and playback of audio files.  Full-stack web application built with React, Redux, Express, & MongoDB. Used by real bands to develop musical projects. Provides database for upload, organization and playback of audio files.',
     pic: exploring_image,
     url: 'https://exploring-the-space.com',
+  },
+  {
+    title: 'Exploring the Space Mobile',
+    description:
+      "Mobile client for Exploring the Space, made with React Native. Works on iOS and Android devices. Uses React Native Track Player for streaming audio playback. Features remote audio control from your mobile device's lock screen.",
+    pic: exploring_mobile_image,
+    url: 'https://exploring-the-space.com/mobile',
   },
   {
     title: 'Apprehenchmen',
